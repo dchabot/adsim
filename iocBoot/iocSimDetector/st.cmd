@@ -5,7 +5,7 @@ errlogInit(20000)
 dbLoadDatabase("$(EPICS_BASE)/dbd/simDetectorApp.dbd")
 simDetectorApp_registerRecordDeviceDriver(pdbbase) 
 
-epicsEnvSet("PREFIX", "13SIM1:")
+epicsEnvSet("PREFIX", "XF:31IDA-BI{Cam:Tbl}")
 epicsEnvSet("PORT",   "SIM1")
 epicsEnvSet("QSIZE",  "20")
 epicsEnvSet("XSIZE",  "640")
