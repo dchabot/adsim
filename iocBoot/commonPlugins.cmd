@@ -83,17 +83,17 @@ initFastSweep("SweepTotal5", "STATS5", 1, $(NCHANS), "TOTAL_ARRAY", "CALLBACK_PE
 initFastSweep("SweepNet5",   "STATS5", 1, $(NCHANS), "NET_ARRAY",   "CALLBACK_PERIOD")
 
 # Load MCA records for the fast sweep drivers
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats1:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal1 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats2:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal2 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats3:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal3 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats4:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal4 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats5:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal5 0)")
-
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats1:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet1 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats2:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet2 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats3:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet3 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats4:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet4 0)")
-dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats5:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet5 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats1:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal1 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats2:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal2 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats3:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal3 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats4:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal4 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats5:TotalArray,DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepTotal5 0)")
+#
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats1:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet1 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats2:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet2 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats3:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet3 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats4:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet4 0)")
+#dbLoadRecords("$(EPICS_BASE)/db/mca.db", "P=$(PREFIX),M=Stats5:NetArray,  DTYP=asynMCA,NCHAN=$(NCHANS),INP=@asyn(SweepNet5 0)")
 
 # Create a transform plugin
 NDTransformConfigure("TRANS1", $(QSIZE), 0, "$(PORT)", 0, -1, -1)
