@@ -28,7 +28,7 @@ dbLoadRecords("$(EPICS_BASE)/db/NDPluginBase.template","P=$(PREFIX),R=image1:,PO
 
 # This creates a waveform large enough for 640x480x3 (e.g. RGB color) arrays.
 # This waveform only allows transporting 8-bit images
-dbLoadRecords("$(EPICS_BASE)/db/NDStdArrays.template", "P=$(PREFIX),R=image1:,PORT=Image1,ADDR=0,TIMEOUT=1,TYPE=Int8,FTVL=UCHAR,NELEMENTS=921600")
+dbLoadRecords("$(EPICS_BASE)/db/NDStdArrays.template", "P=$(PREFIX),R=image1:,PORT=Image1,ADDR=0,TIMEOUT=1,TYPE=Int16,FTVL=SHORT,NELEMENTS=1843200")
 # This waveform allows transporting 32-bit images
 #dbLoadRecords("$(EPICS_BASE)/db/NDStdArrays.template", "P=$(PREFIX),R=image1:,PORT=Image1,ADDR=0,TIMEOUT=1,TYPE=Int32,FTVL=LONG,NELEMENTS=921600")
 
