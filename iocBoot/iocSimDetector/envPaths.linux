@@ -1,6 +1,6 @@
 epicsEnvSet("ARCH","linux-x86_64")
 epicsEnvSet("IOC","iocSimDetector")
-epicsEnvSet("TOP","/home/dchabot/workspace/adsim")
+epicsEnvSet("TOP","/epics/iocs/adsim")
 epicsEnvSet("GLIBPREFIX","/usr")
 epicsEnvSet("SUPPORT","/usr/lib/epics")
 epicsEnvSet("ASYN","/usr/lib/epics")

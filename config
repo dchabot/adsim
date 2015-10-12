@@ -1,4 +1,4 @@
 NAME=adsim
-USER=dchabot
-PORT=4062
-HOST=32
+USER=root
+PORT=2049
+HOST=localhost
