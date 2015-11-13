@@ -1,4 +1,3 @@
 NAME=adsim
 USER=root
 PORT=2049
-HOST=localhost
